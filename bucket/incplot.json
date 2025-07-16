@@ -7,11 +7,11 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/InCom-0/incplot/releases/download/v0.1.6/incplot_windows_x86_64.zip",
+            "url": "https://github.com/InCom-0/incplot/releases/download/v0.1.6/incplot_windows_msvc_x86_64.zip",
             "hash": "062a228f12839fa751f5e1c41576d3f47939713bf2581e55d08d9ba6e3f72a41"
         }
     },
-    "extract_dir": "incplot_windows_x86_64",
+    "extract_dir": "incplot_windows_msvc_x86_64",
     "bin": "bin\\incplot.exe",
     "checkver": {
         "url": "https://api.github.com/repositories/977166767/releases/latest",
@@ -22,7 +22,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/InCom-0/incplot/releases/download/v$version/incplot_windows_x86_64.zip"
+                "url": "https://github.com/InCom-0/incplot/releases/download/v$version/incplot_windows_msvc_x86_64.zip"
             }
         },
         "hash": {
