@@ -12,13 +12,16 @@
         }
     },
     "extract_dir": "incplot_windows_msvc_x86_64",
-    "bin": "bin\\incplot.exe",
+    "bin": "incplot.exe",
     "checkver": {
         "url": "https://api.github.com/repositories/977166767/releases/latest",
         "jsonpath": "$.body",
         "regex": "v(?<majorVersion>[\\w.-]+)\\.(?<minorVersion>[\\w.-]+)\\.(?<patchVersion>[\\w.-]+)",
         "replace": "${majorVersion}.${minorVersion}.${patchVersion}"
     },
+    "persist": [
+        "configDB.sqlite"
+    ],
     "autoupdate": {
         "architecture": {
             "64bit": {
