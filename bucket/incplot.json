@@ -25,8 +25,8 @@
     ],
     "bin": "incplot.exe",
     "checkver": {
-        "url": "https://api.github.com/repositories/977166767/releases/latest",
-        "jsonpath": "$.body",
+        "url": "https://api.github.com/repos/InCom-0/incplot/releases/latest",
+        "jsonpath": "$.tag_name",
         "regex": "v(?<majorVersion>[\\w.-]+)\\.(?<minorVersion>[\\w.-]+)\\.(?<patchVersion>[\\w.-]+)",
         "replace": "${majorVersion}.${minorVersion}.${patchVersion}"
     },
